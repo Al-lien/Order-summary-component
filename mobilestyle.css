@@ -1,0 +1,232 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body
+{
+	/* Solution pour que le body prenne 100% de l'écran*/
+	min-height: 100vh;
+	margin: 0;
+
+	overflow: hidden;
+	font-family: 'Red Hat Display', sans-serif;
+	background: url(images/pattern-background-mobile.svg);
+	background-repeat: repeat-x;
+	background-color: hsl(225, 100%, 94%);
+
+	/* Apparement c'est parfait pour centrer un div dans un div*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+main
+{
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+	width: 330px;
+	height: 565px;
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+div
+{
+	margin-top: auto;
+}
+
+
+.parent 
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.hero { grid-area: 1 / 1 / 2 / 2; }
+.title { grid-area: 2 / 1 / 3 / 2; }
+.paragraph{ grid-area: 3 / 1 / 4 / 2; }
+.subscription { grid-area: 4 / 1 / 5 / 2; }
+.payment { grid-area: 5 / 1 / 6 / 2; }
+.cancel { grid-area: 6 / 1 / 7 / 2; }
+
+/* ILLUSTRATION */
+
+.hero #illustration
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+}
+
+/* TITLE */
+
+.title h1
+{
+	text-align: center;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-bottom: 0;
+}
+
+/* PARAGRAPHE */
+
+
+.paragraph p
+{
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+	font-weight: 700px;
+	color: hsl(224, 23%, 55%);
+}
+
+
+/* SUBSCRIPTION */
+
+.subscription
+{
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+#price h2
+{
+	margin-bottom: 0;
+}
+#price p
+{
+	margin-top: 0;
+}
+
+#icon-music
+{
+	padding-left: 20px;
+}
+
+#price
+{
+	margin-left: 10px;
+}
+
+#change
+{
+	padding-right: 20px;
+}
+
+#change p:hover
+{
+	color: mediumpurple;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.subscription h2
+{
+	text-align: left;
+	font-weight: 500;
+	color: hsl(223, 47%, 23%);
+	font-size: medium;
+}
+
+.subscription p
+{
+	text-align: left;
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+}
+
+#icon-music,#price,#change
+{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#icon-music
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#change p
+{
+	text-align: right;
+	font-weight: 500;
+	color: hsl(245, 75%, 52%);
+	text-decoration: underline;
+	font-size: small;
+}
+
+/* PAYMENT */
+
+.payment
+{
+	background-color: hsl(245, 75%, 52%);
+	border-radius: 10px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.payment:hover
+{
+	background-color: mediumpurple;
+	cursor: pointer;
+}
+
+.payment h2
+{
+	font-weight: 700;
+	color: white;
+	font-size: medium;
+}
+
+/* CANCEL */
+
+.cancel
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: auto;
+}
+
+.cancel p
+{
+
+	font-weight: 700;
+	color: hsl(224, 23%, 55%);
+	font-size: smaller;
+}
+
+.cancel p:hover
+{
+	color: hsl(223, 47%, 23%) ;
+	cursor: pointer;
+}
+
+
+
+
+
